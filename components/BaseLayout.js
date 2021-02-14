@@ -5,10 +5,7 @@ export default function BaseLayout(props) {
     <html lang="en">
       <Head>
         <title>Javi's Portfolio</title>
-        <meta
-          name="Description"
-          content="Portfolio of my latest web and mobile development work, Created by Javier Alvarez"
-        />
+        <meta name="Description" content="Portfolio of my latest web and mobile development work, Created by Javier Alvarez"/>
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <script
           type="application/ld+json"
@@ -28,8 +25,9 @@ export default function BaseLayout(props) {
           }}
         />
         <link rel="canonical" href="https://javi-portfolio.com" />
+        {/* <link rel="shortcut icon" href="favicon.icon" /> */}
       </Head>
-      <main>{props.children}</main>
+        <body>{props.children}</body>
     </html>
   );
 }
